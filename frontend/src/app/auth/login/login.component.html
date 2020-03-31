@@ -1,0 +1,57 @@
+<!--<div class="container">
+  <div class="login">
+    <div class="login-triangle"></div>
+
+    <h2 class="login-header">Log in</h2>
+
+    <form #frmLogin="ngForm" class="login-container" (ngSubmit)="onLogin(frmLogin)">
+      <p>
+        <input type="email" name="email" placeholder="Email" ngModel required>
+      </p>
+      <p>
+        <input type="password" name="password" placeholder="Password" ngModel required>
+      </p>
+      <p>
+        <input type="submit" value="Send">
+      </p>
+    </form>
+  </div>
+</div>-->
+
+
+    <style>
+        .btn-inverse-light:hover{
+            color: #666;
+        }
+    </style>
+    <div class="login container-fluid page-body-wrapper full-page-wrapper">
+        <div class="content-wrapper d-flex align-items-center auth lock-full-bg">
+            <div class="row w-100">
+                <div class="col-lg-4 mx-auto">
+                    <div class="auth-form-transparent text-left pl-4 text-center">
+                        <h1 class="text-center animated rubberBand" style="font-family: 'Rubik Mono One', sans-serif;">Bit-Music</h1>
+
+                                     
+                        <form #frmLogin="ngForm" class="pt-5" (ngSubmit)="onLogin(frmLogin)">
+                            
+                            <div class="form-group">
+                                <input type="email" ngModel name="email" class="form-control text-center" id="email" value="" placeholder="Correo electronico">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" ngModel name="password" class="form-control text-center" id="password" placeholder="Contraseña">
+                            </div>
+                            <div class="mt-5">
+                                <button type="submit" class="btn btn-inverse-primary btn-fw btn-block font-weight-medium">Iniciar sesión</button>
+                            </div>
+                            <div class="mt-3 text-center">
+                                <span href="#" class="auth-link text-white">No tienes una cuenta? <a href="./auth/register">Registrate</a></span>
+                            </div>
+                        </form>
+                            <br><br>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- content-wrapper ends -->
+    </div>
