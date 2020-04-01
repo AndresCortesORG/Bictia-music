@@ -15,8 +15,6 @@ export class LoginComponent {
   onLogin(form): void {
     if (form.value.email && form.value.password) {
       this.authService.login(form.value).subscribe(res => {
-        console.log(res);
-        //alert('direccionamiento al dashboard');
        this.router.navigateByUrl('/escritorio');
       }, ({error}) => {
         alert(error.message);

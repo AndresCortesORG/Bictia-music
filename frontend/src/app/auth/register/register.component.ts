@@ -9,11 +9,9 @@ import {AuthService} from '../../services/auth.service';
 })
 export class RegisterComponent {
 
-  constructor(private authService: AuthService, private router: Router) {
-  }
+  constructor(private authService: AuthService, private router: Router) { }
 
   onRegister(form): void {
-    console.log(form.value);
     if (form.value.name && form.value.email && form.value.password) {
       this.authService.register(form.value).subscribe(res => {
         this.router.navigateByUrl('/auth/login');
@@ -22,5 +20,4 @@ export class RegisterComponent {
       alert('Datos vacios.');
     }
   }
-
 }
