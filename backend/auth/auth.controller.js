@@ -47,8 +47,10 @@ exports.loginUser = (req, res) => {
                 const accessToken = jwt.sign({id: user.id}, SECRET_KEY, {expiresIn: expiresIn});
 
                 const dataUser = {
+                    id: user.id,
                     name: user.name,
                     email: user.email,
+                    avatar_url: user.avatar_url || '',
                     accessToken: accessToken,
                     expiresIn: expiresIn
                 };
@@ -61,14 +63,3 @@ exports.loginUser = (req, res) => {
         }
     });
 };
-
-
-
-
-
-
-
-
-
-
-

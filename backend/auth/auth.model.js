@@ -17,6 +17,9 @@ const userSchema = new Schema({
     type: String,
     required: true,
     trim: true
+  },
+  avatar_url: {
+    type: String,
   }
 }, {
     timestamps: true
