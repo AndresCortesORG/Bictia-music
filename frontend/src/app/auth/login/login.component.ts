@@ -16,8 +16,8 @@ export class LoginComponent {
     if (form.value.email && form.value.password) {
       this.authService.login(form.value).subscribe(res => {
         console.log(res);
-        alert('direccionamiento al dashboard');
-        // this.router.navigateByUrl('/auth');
+        //alert('direccionamiento al dashboard');
+       this.router.navigateByUrl('/escritorio');
       }, ({error}) => {
         alert(error.message);
       });

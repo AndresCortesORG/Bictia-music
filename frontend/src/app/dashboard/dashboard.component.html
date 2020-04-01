@@ -1,0 +1,146 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-grid-only@1.0.0/bootstrap.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/form.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+<div class="contenido">
+    <main> 
+            <aside style="position: fixed;height: 84%;">
+                <i title="Canciones disponibles" class="fa fa-home" onclick="tabs('canciones')"></i>
+                <i title="Mis canciones favoritas" class="fa fa-heart" onclick="tabs('favoritos')"></i>
+                <i title="Ver mis datos personales" class="fa fa-user" onclick="tabs('perfil')"></i>
+                <i title="Cerrar sesión" class="fa fa-power-off"></i>
+            </aside>
+    
+            <section class="content tab" id="favoritos" style="margin-left: 36px;display: none;">
+                <div class="music-head">
+                    <section class="catty-music">
+                        <div>
+                            <p class="sm-text-center">Mis canciones favoritas</p>
+                    
+                        </div>
+                    </section>
+                </div>
+                <ul class="music-list">
+            <li>
+                        <p>CANCION</p>
+                        <p class="sm-text-right">ARTISTA</p>
+                        <p class="sm-hide">DURACION</p>
+                        <p class="sm-hide">ÁLBUM</p>
+                        <p class="sm-text-right">NO ME GUSTA</p>
+
+                    </li>
+                    <li>
+                        <p class="text-dark">Molinos de viento</p>
+                        <p class="sm-text-right text-dark">Mago de oz</p>
+                        <p class="sm-hide text-dark">3:17</p>
+                        <p class="sm-hide text-dark"><span>Gaia 3</span></p>
+                        <p class="sm-text-right text-dark"><i class="fas fa-heart-broken"></i></p>
+                    </li>
+    
+                </ul>
+            </section>
+            
+            <section class="content tab" id="canciones" style="margin-left: 36px">
+                <div class="music-head">
+                    <section class="catty-music">
+                        <div>
+                            <p class="sm-text-center">Canciones disponibles</p>
+                    
+                        </div>
+                    </section>
+                </div>
+                <ul class="music-list">
+            <li>
+                        <p>CANCION</p>
+                        <p class="sm-text-right">ARTISTA</p>
+                        <p class="sm-hide">DURACION</p>
+                        <p class="sm-hide">ÁLBUM</p>
+                        <p class="sm-text-right">ME GUSTA</p>
+
+                    </li>
+                    <li>
+                        <p class="text-dark">Molinos de viento</p>
+                        <p class="sm-text-right text-dark">Mago de oz</p>
+                        <p class="sm-hide text-dark">3:17</p>
+                        <p class="sm-hide text-dark"><span>Gaia 3</span></p>
+                        <p class="sm-text-right text-danger"><i class="fas fa-heart"></i></p>
+                    </li>
+    
+                </ul>
+            </section>
+            <section class="content tab" id="perfil" style="margin-left: 36px;display: none;">
+                <div class="music-head">
+                    <section class="catty-music">
+                        <div>
+                            <p class="sm-text-center">Perfil</p>
+                    
+                        </div>
+                    </section>
+                </div>
+
+               <div class="container">
+                 <div class="row">
+                   <div class="col-md-4">
+                       <br><br><br>
+                    <form class="ui form">
+                        <div class="field">
+                          <label>Nombres</label>
+                          <input type="text" name="name">
+                        </div>
+
+                        <div class="field">
+                          <label>Correo Electronico</label>
+                          <input type="email" name="email">
+                        </div>
+                    
+                        <button class="btn btn-primary" type="submit">Actualizar</button>
+                      </form>
+                   </div>
+                   <div class="col-md-4 col-md-offset-3">
+                    <br><br><br>
+                 <form class="ui form">
+                     <div class="field">
+                       <label>Contraseña antigua</label>
+                       <input type="password" name="password">
+                     </div>
+
+                     <div class="field">
+                       <label>Nueva Contraseña</label>
+                       <input type="password" name="password">
+                     </div>
+                 
+                     <button class="btn btn-primary" type="submit">Actualizar Contraseña</button>
+                   </form>
+                </div>
+              </div>
+               </div>
+            </section>
+        </main>
+    
+    <br>
+    <br><br><br>
+    <br>
+    <br>
+    <br>
+    <footer style="position: fixed;bottom: 0;width: 100%;">
+    
+            <div class="catty-music-small">
+                <img id="posterD" src="https://1.bp.blogspot.com/_hMJwcRKaUC4/TPhmMK824EI/AAAAAAAAFfU/o96MDDW3Lgg/s400/Mago%2BDe%2BOz%2B-%2BGaia%2BEpilogo%2B%25282010%2529%2B320%2BKbps.jpg" class="sm-hide">
+                <div>
+                    <p id="songD">El hombre de la mirada triste</p>
+                    <p id="artistD">Mago de oz, Gaia III</p>
+                </div>
+            </div>
+    
+            <div class="catty-music-controls">
+                <i id="back" class="fa fa-step-backward"></i>
+                <i id="playPause" class="fa fa-play"></i>
+                <i class="fa fa-step-forward"></i>
+                <i class="fa fa-rotate-right sm-hide"></i>
+                <i class="fa fa-random sm-hide"></i>
+            </div>
+    
+        </footer>
+    </div>
+ 
+    
